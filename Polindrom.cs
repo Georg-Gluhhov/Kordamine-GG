@@ -11,9 +11,10 @@ namespace Kordamine_GG
         public static void PolindromFunc()
         {
             
-            int i = default;
+            int i = 0;
             Console.WriteLine("Enter the words");
             string val = Console.ReadLine();
+            val = val.ToLower();
             string[] words = val.Split(new char[] { ' ' });
             foreach (var v in words)
             {
